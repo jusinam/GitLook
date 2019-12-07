@@ -1,8 +1,41 @@
-<h1>GitLook</h1>
+<div class="container-fluid">
+    <h1>GitLook</h1>
 
-<form action="" class="enter">
-    <div class="form-group">
-        <input type="text" placeholder="enter username here...." class="form-control"  [(ngModel)]="username" name="username" (keyup)="findProfile()">
-    
+    <form action="" class="enter">
+        <div class="form-group">
+            <input type="text" placeholder="enter username here...." class="form-control" [(ngModel)]="username"
+                name="username" (keyup)="findProfile()">
+
+        </div>
+    </form>
+
+    <div *ngIf="profile">
+
+        <div class="row">
+
+            <div class="col-sm-3">
+                <img class="img" src="{{profile.avatar_url}}">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="col-sm-3">
+
+                <div id="prof">
+                    <p class="" *ngIf="profile.bio">{{profile.bio}}</p>
+                    <p class="" *ngIf="profile.blog">{{profile.blog}}</p>
+                    <p class="" *ngIf="profile.location">{{profile.location}}</p>
+                    <p class="" *ngIf="profile.email">{{profile.email}}</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
     </div>
-</form>
+
+</div>
