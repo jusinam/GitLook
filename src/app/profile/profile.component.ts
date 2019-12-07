@@ -20,12 +20,12 @@ export class ProfileComponent implements OnInit {
       this.profile = profile;
     });
 
+    this.profileService.getProfileRepos().subscribe(repos => {
+      console.log(repos);
+      this.repos = repos;
+    });
 
-
-
-
-
-  }
+}
 
 
   searchProfile(){
@@ -36,14 +36,13 @@ export class ProfileComponent implements OnInit {
       this.profile = profile;
     });
 
-
-
-  }
+ }
 
   ngOnInit() {
 
     this.profileService.updateProfile("DjCooGie");
-    this.profileService.getProfileInfo().subscribe(profile => this.profile = profile)
+    this.profileService.getProfileInfo().subscribe(profile => this.profile = profile);
+    this.profileService.getProfileRepos().subscribe(repos =>  this.repos = repos);
 
   }
 
