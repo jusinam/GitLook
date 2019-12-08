@@ -5,7 +5,8 @@
 
     <form action="" class="enter">
         <div class="form-group">
-            <input type="text" placeholder="type github username......" class="form-contro" [(ngModel)]="username" name="username" (keyup)="searchProfile()" width="">
+            <input type="text" placeholder="type github username......" class="form-contro" [(ngModel)]="username"
+                name="username" (keyup)="searchProfile()" width="">
 
         </div>
     </form>
@@ -15,42 +16,40 @@
         <div class="row">
 
             <div class="col-sm-5 text-center">
-                <img class="img rounded-circle" src="{{profile.avatar_url}}" width="50%" >
-            
+                <img class="img rounded-circle" src="{{profile.avatar_url}}" width="50%">
 
-                <div id="prof" >
-                    <p class="" *ngIf="profile.bio">{{profile.bio}}</p>
-                    <p class="" *ngIf="profile.blog">{{profile.blog}}</p>
-                    <p class="" *ngIf="profile.location">{{profile.location}}</p>
-                    <p class="" *ngIf="profile.email">{{profile.email}}</p>
+
+                <div id="prof">
+                    <p *ngIf="profile.bio">{{profile.bio}}</p>
+                    <a href="" style="color: blue;"><p *ngIf="profile.blog">{{profile.blog}}</p></a>
+                    <p *ngIf="profile.location"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        {{profile.location}}</p>
+                    <p *ngIf="profile.email">{{profile.email}}</p>
                 </div>
 
             </div>
+            <div class="col-sm-2"></div>
 
+            <div class="col-sm-5 text-center">
 
-            <div class="col-sm-6 text-center">
-               
-                        
-                    <p class="">Number of Repos : {{profile.public_repos}} </p>
-                            <p class="">Followers : {{profile.followers}} </p>&nbsp;
+                <div class="inform">
+                <p class="">Number of Repos : <span class = "hi">{{profile.public_repos}}</span> </p>
+                <p class="">Followers : <span class = "hi">{{profile.followers}} </span></p>&nbsp;
 
-                            <p class="">Following : {{profile.following}}  </p>&nbsp;
+                <p class="">Following :<span class = "hi"> {{profile.following}}</span> </p>&nbsp;
 
-                            <p class="">Gists : {{profile.public_gists}} </p>&nbsp;  
-                       
-                            <p>
-                                <a href="{{profile.html_url}}" target="_blank" class="view text-success">Explore profile on github.com </a>
-                               
-                            </p>
-                            
-                             
-                    
+                <p class="">Gists : <span class = "hi">{{profile.public_gists}}</span> </p>&nbsp;
 
+                <p id="last" >
+                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                    <a href="{{profile.html_url}}" target="_blank" >
+                        View profile on github.com </a>
 
-                    
-
+                </p>
 
                 </div>
+
+            </div>
 
         </div>
 
