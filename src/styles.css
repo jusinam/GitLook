@@ -1,2 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+    background-image: radial-gradient(rgb(152, 92, 134), rgb(162, 78, 18), rgb(128, 173, 191));
+    background-repeat: none;
+    background-size: cover;
+}
+
+input[type=text] {
+    width: 20%;
+    border-radius: 0.2rem;
+    padding: 10px 1px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-style: italic;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid burlywood;
+    /* border-style: double; */
+  }
+
+::placeholder {
+    color: rgb(245, 226, 226);
+}
+
