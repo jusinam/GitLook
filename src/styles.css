@@ -16,12 +16,12 @@ h1 {
 
 h2 {
     text-align: center;
-    border: 1px solid rgb(122, 136, 142);
     border-radius: 0.1rem;
     padding: 1%;
-    width: 90%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
+    font-size: 20px;
 }
 
 input[type=text] {
@@ -50,4 +50,26 @@ input[type=text] {
 
 }
 
+.inform {
+    margin-top: 3%;
+    padding: 3%;
+    line-height: 15pt;
+}
+
+.hi {
+    color: rgb(217, 228, 228);
+}
+
+#last {
+    background: rgba(191, 180, 159, 0.299);
+    /* width: 80%; */
+    text-align: center;
+    margin-left: 10%;
+    border-radius: 0.2rem;
+    padding: 2%;
+}
+
+#last {
+    color: rgb(178, 167, 250);
+}
 
