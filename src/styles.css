@@ -28,14 +28,16 @@ input[type=text] {
     width: 30%;
     border-radius: 0.2rem;
     padding: 10px 1px;
-    margin: 10px 0;
-    box-sizing: border-box;
+    /* margin: 10px 0; */
+    /* box-sizing: border-box; */
     font-style: italic;
     text-align: center;
     background: transparent;
     border: none;
     border-bottom: 2px solid burlywood;
-    /* border-style: double; */
+    margin-left: 35%;
+    
+    
   }
 
 ::placeholder {
@@ -47,3 +49,5 @@ input[type=text] {
     
 
 }
+
+
