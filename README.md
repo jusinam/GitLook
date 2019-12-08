@@ -1,27 +1,74 @@
-# GitLook
+# _GitLook_
+GitLook is an Angular Web App that uses Git-Hub API to retrieve user data. Search a git-hub username and it provides repository details of the git-hub account.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+## Author
+**Evans Nyambane** 
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### GitLook
 
-## Code scaffolding
+![Look ](src/assets/read.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Setup and installation requirements
+- ` git clone https://github.com/DjCooGie/GitLook.git `
+- Extract the file into your preferred location
+- Navigate to the files via the terminal.
+- While on terminal, ` ng serve -o ` or ` npm start ` to open the app in your browser
 
-## Build
+### Languages used
+1. Javascript-Typescript
+2. HTML & CSS (Bootstrap)
+3. Angular 8
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### BDD
+1. 
+| Behavior |
+| -------- |
+| The page loads  | 
+| Click serach input area |
+| Type username |
 
-## Running unit tests
+2. 
+| Inpage actions |
+| -------------- |
+| User navigates through the application |
+| User clicks on the search input area  | 
+| The user inputs the name of the github user  |
+3. 
+| Output |
+| ------ |
+| The page displays the users searched for | 
+| Link is provided to the user to view the github account searched on the root site |
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Live link: [https://djcoogie.github.io/GitLook/](https://djcoogie.github.io/GitLook/)
 
-## Running end-to-end tests
+### Bugs
+No known bugs
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+### Support and contact details
+Incase of any questions, problems ideas concerning the website, feel free to reach out to me via email.(evansonchagwa01@gmail.com)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### License
+
+***MIT LICENSE***
+
+
+Copyright &copy; 2019 **Evans Nyambane**
+
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
