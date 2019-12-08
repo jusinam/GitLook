@@ -7,6 +7,23 @@ body {
     background-size: cover;
 }
 
+h1 {
+    font-size: 80px;
+    color: skyblue;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+h2 {
+    text-align: center;
+    border: 1px solid rgb(122, 136, 142);
+    border-radius: 0.1rem;
+    padding: 1%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 input[type=text] {
     width: 30%;
     border-radius: 0.2rem;
@@ -25,3 +42,8 @@ input[type=text] {
     color: rgb(245, 226, 226);
 }
 
+#logo {
+    text-decoration: rgb(191, 164, 164) underline;
+    
+
+}
