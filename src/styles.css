@@ -24,6 +24,12 @@ h2 {
     font-size: 20px;
 }
 
+h3 {
+    color: rgb(240, 180, 102);
+    font-style: italic;
+    font-size: 20px;
+}
+
 input[type=text] {
     width: 30%;
     border-radius: 0.2rem;
@@ -51,7 +57,7 @@ input[type=text] {
 }
 
 .inform {
-    margin-top: 3%;
+    /* margin-top: 3%; */
     padding: 3%;
     line-height: 15pt;
 }
