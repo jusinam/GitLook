@@ -1,9 +1,9 @@
-<div class="container-fluid">
+<div id="page" class="container-fluid">
     <h1><span id="logo">Git</span><img src="assets/git 5.png" alt="" width="100px"> </h1>
 
     <h2 appHighlight>Gitlook retrieves a user's github account details on submission of the username.</h2>
 
-    <form action="" class="enter">
+    <form class="enter">
         <div class="form-group">
             <input type="text" placeholder="type github username......" class="form-contro" [(ngModel)]="username"
                 name="username" (keyup)="searchProfile()" width="">
@@ -21,39 +21,60 @@
 
                 <div id="prof">
                     <p *ngIf="profile.bio">{{profile.bio}}</p>
-                    <a href="" style="color: blue;"><p *ngIf="profile.blog">{{profile.blog}}</p></a>
+                    <a href="" style="color: blue;">
+                        <p *ngIf="profile.blog">{{profile.blog}}</p>
+                    </a>
                     <p *ngIf="profile.location"><i class="fa fa-map-marker" aria-hidden="true"></i>
                         {{profile.location}}</p>
                     <p *ngIf="profile.email">{{profile.email}}</p>
                 </div>
 
-            </div>
-            <div class="col-sm-2"></div>
-
-            <div class="col-sm-5 text-center">
-
                 <div class="inform">
                     <h3>Profile Details</h3>
-                <p class="">Number of Repos : <span class = "hi">{{profile.public_repos}}</span> </p>
-                <p class="">Followers : <span class = "hi">{{profile.followers}} </span></p>&nbsp;
+                    <p>Number of Repos : <span class="hi">{{profile.public_repos}}</span> </p>
+                    <p>Followers : <span class="hi">{{profile.followers}} </span></p>
 
-                <p class="">Following :<span class = "hi"> {{profile.following}}</span> </p>&nbsp;
+                    <p>Following :<span class="hi"> {{profile.following}}</span> </p>&nbsp;
 
-                <p class="">Gists : <span class = "hi">{{profile.public_gists}}</span> </p>&nbsp;
 
-                <p id="last" >
+                    <p id="last">
                         <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                    <a href="{{profile.html_url}}" target="_blank" >
-                        View profile on github.com </a>
+                        <a href="{{profile.html_url}}" target="_blank">
+                            View profile on github.com </a>
 
-                </p>
+                    </p>
+
 
                 </div>
 
             </div>
 
+            <div class="col-sm-1"></div>
+
+            <div  class="col-sm-6">
+                    <h4 id="reps" class="text text-center" >Repositories</h4>
+                    <div id="repositories">
+                <div id="cad" class="card" *ngFor="let repos of repos">
+                   
+                    <div class="cad">
+
+
+                        <div class=" text-center">
+                            <h5 id="reponame"> {{repos.name}} </h5>
+                        </div>
+                        <div class="card-body">
+                            <p id="repodescription"> {{repos.description}} </p>
+                        </div>
+                        <a href="{{repos.html_url}}" class="view btn btn-outline-primary text-center" target="_blank">
+                            View on GitHub </a>
+
+                    </div>
+
+                </div>
+                </div>
+            </div>
+
         </div>
 
-    </div>
 
-</div>
+    </div>
