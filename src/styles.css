@@ -38,20 +38,34 @@ input[type=text] {
     width: 30%;
     border-radius: 0.2rem;
     padding: 10px 1px;
-    /* margin: 10px 0; */
-    /* box-sizing: border-box; */
     font-style: italic;
     text-align: center;
     background: transparent;
     border: none;
     border-bottom: 2px solid burlywood;
     margin-left: 35%;
-    
-    
   }
+
+#bt {
+    margin-left: 1%;
+    border: none;
+    color: #0000FF;
+    font-size: larger;
+}
+
+#bt:hover {
+    color: skyblue;
+    background: none;
+    text-decoration: underline;
+}
 
 ::placeholder {
     color: rgb(245, 226, 226);
+}
+
+.date {
+    font-size: 10px;
+    margin-left: 2%;
 }
 
 #logo {

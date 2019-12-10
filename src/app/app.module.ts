@@ -7,15 +7,15 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProfileService } from './profile.service'
 import { FormsModule }from '@angular/forms';
 import { HighlightDirective } from './highlight.directive';
-import { DatecountPipe } from './datecount.pipe';
+// import { DatecountPipe } from './datecount.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    HighlightDirective,
-    DatecountPipe
+    HighlightDirective
+    // DatecountPipe
   ],
   imports: [
     BrowserModule,
@@ -23,7 +23,7 @@ import { DatecountPipe } from './datecount.pipe';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
