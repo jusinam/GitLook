@@ -8,6 +8,8 @@ import { ProfileService } from './profile.service'
 import { FormsModule }from '@angular/forms';
 import { HighlightDirective } from './highlight.directive';
 import { DatecountPipe } from './datecount.pipe';
+import { UserpageComponent } from './userpage/userpage.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -15,13 +17,15 @@ import { DatecountPipe } from './datecount.pipe';
     AppComponent,
     ProfileComponent,
     HighlightDirective,
-    DatecountPipe
+    DatecountPipe,
+    UserpageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [ProfileService],
   bootstrap: [AppComponent]

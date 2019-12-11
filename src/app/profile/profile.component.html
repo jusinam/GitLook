@@ -1,91 +1,11 @@
 <div id="page" class="container-fluid">
+    
+<div class="mainpage d-flex flex-column justify-content-center align-items-center">
     <h1><span id="logo">Git</span><img src="assets/git 5.png" alt="" width="100px"> </h1>
-
     <h2 appHighlight>Gitlook retrieves a user's github account details on submission of the username.</h2>
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8"> 
-        <form class="enter" (ngSubmit)='searchProfile()' #gitForm='ngForm' name="gitForm">
-        <div class="form-group">
-            <input type="text" placeholder="type username..." class="form-contro  mb15 user-input" [(ngModel)]="username"
-                name="username"  width=""><button id="bt" class="view btn btn-outline-primary text-center" type="submit" >Search</button>
-	
-        </div>
-    </form>
+
+    <a href="/userpage" class="view btn btn-primary text-center">Continue to GitLook</a>
+
 </div>
-    <div class="col-sm-2"></div>
-</div>
-   
-
-    <div *ngIf="profile">
-
-        <div class="row">
-
-            <div class="col-sm-5 text-center">
-                <img class="img rounded-circle" src="{{profile.avatar_url}}" width="50%">
-
-
-                <div id="prof">
-                    <p *ngIf="profile.bio">{{profile.bio}}</p>
-                    <a href="" style="color: blue;">
-                        <p *ngIf="profile.blog">{{profile.blog}}</p>
-                    </a>
-                    <p *ngIf="profile.location"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                        {{profile.location}}</p>
-                    <p *ngIf="profile.email">{{profile.email}}</p>
-                </div>
-
-                <div class="inform">
-                    <h3>Profile Details</h3>
-                    <p>Number of Repos : <span class="hi">{{profile.public_repos}}</span> </p>
-                    <p>Followers : <span class="hi">{{profile.followers}} </span></p>
-
-                    <p>Following :<span class="hi"> {{profile.following}}</span> </p>&nbsp;
-
-
-                    <p id="last">
-                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                        <a href="{{profile.html_url}}" target="_blank">
-                            View profile on github.com </a>
-
-                    </p>
-
-
-                </div>
-
-            </div>
-
-            <div class="col-sm-1"></div>
-
-            <div class="col-sm-6">
-                <h4 id="reps" class="text text-center">Repositories</h4>
-                <div id="repositories">
-                    <div id="cad" class="card" *ngFor="let repo of repos">
-
-                        <div class="cad">
-
-
-                            <div class=" text-center">
-                                <h5 id="reponame"> {{repo.name}} </h5>
-                            </div>
-                            
-                            <div class="card-body">
-                                <p  id="repodescription"> {{repo.description}} </p>
-                            </div>
-                            <a href="{{repos.html_url}}" class="view btn btn-outline-primary text-center"
-                                target="_blank">
-                                View on GitHub </a>
-                                <small class="date"> 
-                                    Created on : {{ repo.created_at | date }} 
-                                </small>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
 
     </div>

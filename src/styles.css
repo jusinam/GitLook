@@ -1,31 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
-body {
-    background-image: linear-gradient(to bottom right, rgb(202, 92, 14), rgb(100, 134, 147));
-    background-repeat: none;
-    background-size: cover;
+html {
+    margin: 0;
+    padding: 0;
 }
 
-#page {
-    margin-bottom: 2%;
+body {
+    background-image: linear-gradient(to bottom right, rgb(202, 92, 14), rgb(100, 134, 147));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
+
 
 h1 {
     font-size: 80px;
     color: skyblue;
-    margin-left: 5%;
-    margin-top: 1%;
+
 }
 
 h2 {
     text-align: center;
     border-radius: 0.1rem;
     padding: 1%;
-    width: 55%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 20px;
 }
 
 h3 {
@@ -34,16 +32,21 @@ h3 {
     font-size: 20px;
 }
 
+#toop {
+    margin-top: 3%;
+}
+
+.mainpage {
+    height: 100vh;
+}
+
 input[type=text] {
-    width: 30%;
     border-radius: 0.2rem;
-    padding: 10px 1px;
     font-style: italic;
     text-align: center;
     background: transparent;
     border: none;
     border-bottom: 2px solid burlywood;
-    margin-left: 35%;
   }
 
 #bt {
@@ -80,7 +83,6 @@ input[type=text] {
 
 #last {
     background: rgba(191, 180, 159, 0.299);
-    /* width: 80%; */
     text-align: center;
     margin-left: 10%;
     border-radius: 0.2rem;
@@ -94,9 +96,8 @@ input[type=text] {
 #repositories {
     border: 1px solid sienna;
     padding: 3%;
-    height: 580px;
+    height: 590px;
     overflow: auto;
-    position: relative;
     border-radius: 0.2rem;
     
 }
