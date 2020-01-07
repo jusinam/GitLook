@@ -50,7 +50,7 @@ input[type=text] {
   }
 
 #bt {
-    margin-left: 1%;
+    /* margin-left: 1%; */
     border: none;
     color: #0000FF;
     font-size: larger;

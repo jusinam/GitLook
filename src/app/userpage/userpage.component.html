@@ -4,12 +4,12 @@
     <div class="d-flex flex-column justify-content-center align-items-center"> 
         <form class="enter" (ngSubmit)='searchProfile()' #gitForm='ngForm' name="gitForm">
         <div class="form-group">
-            <input type="text" placeholder="type username..." class="form-contol  mb15 user-input" [(ngModel)]="username"
+            <input type="text" placeholder="type username..." class="text-center " [(ngModel)]="username"
                 name="username"  width="">
-	
+	    <button id="bt" class="view btn btn-outline-none" type="submit" >Search</button>
+
         </div>
     </form>
-    <button id="bt" class="view btn btn-outline-primary text-center" type="submit" >Search</button>
 
 </div>
 
@@ -56,23 +56,23 @@
             <div class="col-sm-6">
                 <h4 id="reps" class="text text-center">Repositories</h4>
                 <div id="repositories">
-                    <div id="cad" class="card" *ngFor="let repo of repos">
+                    <div id="cad" class="card" *ngFor="let repos of repos">
 
                         <div class="cad">
 
 
                             <div class=" text-center">
-                                <h5 id="reponame"> {{repo.name}} </h5>
+                                <h5 id="reponame"> {{repos.name}} </h5>
                             </div>
                             
                             <div class="card-body">
-                                <p  id="repodescription"> {{repo.description}} </p>
+                                <p  id="repodescription"> {{repos.description}} </p>
                             </div>
                             <a href="{{profile.html_url}}" class="view_repo btn btn-outline-primary text-center"
                                 target="_blank">
                                 View on GitHub </a>
                                 <small class="date"> 
-                                    Created on : {{ repo.created_at | date }} 
+                                    Created on : {{ repos.created_at | date }} 
                                 </small>
 
                         </div>

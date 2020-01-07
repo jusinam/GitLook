@@ -15,6 +15,23 @@ export class UserpageComponent implements OnInit {
 
   constructor(private profileService:ProfileService) { 
 
+    // this.profileService.updateProfile(this.username);
+    // this.profileService.getProfileInfo().subscribe(profile => {
+    //   console.log(profile);
+    //   this.profile = profile;
+    // });
+
+    // this.profileService.getProfileRepos().subscribe(repos => {
+    //   console.log(repos);
+    //   this.repos = repos;
+    // });
+
+//}
+  }
+
+
+searchProfile(){
+
     this.profileService.updateProfile(this.username);
     this.profileService.getProfileInfo().subscribe(profile => {
       console.log(profile);
@@ -25,19 +42,12 @@ export class UserpageComponent implements OnInit {
       console.log(repos);
       this.repos = repos;
     });
+    }
 
-}
+    // this.profileService.getProfileInfo().subscribe(profile => this.profile = profile);
+    // this.profileService.getProfileRepos().subscribe(repos =>  this.repos = repos);
 
 
-  searchProfile(){
-
-    this.profileService.updateProfile(this.username);
-    this.profileService.getProfileInfo().subscribe (profile => {
-      console.log(profile);
-      this.profile = profile;
-    });
-
- }
 
   ngOnInit() {
 
