@@ -8,8 +8,8 @@ import { map } from "rxjs/operators";
 export class ProfileService {
 
   private username = "string";
-  private client_id = "26ef02a58b779e12be59";
-  private client_secret = "3d5fb1c5bcad1b44ddb7f4c3da420b3c1eaab7e4";
+  private client_id = "6b94f580e9f01fb4dd66";
+  private client_secret = "efcde45be31e4fe94664006f38d36d3a5e26f06a";
 
   constructor(private http:HttpClient) {
 
