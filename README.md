@@ -10,10 +10,10 @@ GitLook is an Angular Web App that uses Git-Hub API to retrieve user data. Searc
 ![Git ](src/assets/read.png)
 
 ### Setup and installation requirements
-- ` git clone https://github.com/DjCooGie/GitLook.git `
+- ` git clone https://github.com/jusinam/GitLook.git `
 - Extract the file into your preferred location
 - Navigate to the files via the terminal.
-- While on terminal, ` ng serve -o ` or ` npm start ` to open the app in your browser
+- While on terminal, `npm install` to download prerequisites and ` ng serve -o ` or ` npm start ` to open the app in your browser
 
 ### Languages used
 1. Javascript-Typescript
@@ -40,7 +40,7 @@ GitLook is an Angular Web App that uses Git-Hub API to retrieve user data. Searc
 | The page displays the users searched for | 
 | Link is provided to the user to view the github account searched on the root site |
 
-### Live link: [https://djcoogie.github.io/GitLook/](https://djcoogie.github.io/GitLook/)
+### Live link: [https://jusinam.github.io/GitLook/](https://jusinam.github.io/GitLook/)
 
 ### Bugs
 No known bugs
