@@ -1,62 +1,53 @@
 <div id="toop" class="container-fluid">
-   
-   
-    <div class="d-flex flex-column justify-content-center align-items-center"> 
+    <h1><span id="logo">Git</span><img src="assets/git 5.png" alt="" width="100px"> </h1>
+
+    <div class="d-flex flex-column justify-content-center align-items-center">
         <form class="enter" (ngSubmit)='searchProfile()' #gitForm='ngForm' name="gitForm">
-        <div class="form-group">
-            <input type="text" placeholder="type username..." class="text-center " [(ngModel)]="username"
-                name="username"  width="">
-	    <button id="bt" class="view btn btn-outline-none" type="submit" >Search</button>
+            <div class="form-group">
+                <input type="text" placeholder="type username..." class="text-center " [(ngModel)]="username"
+                    name="username" width="">
+                <button id="btt" class="view btn btn-outline-none" type="submit">Search</button>
 
-        </div>
-    </form>
+            </div>
+        </form>
 
-</div>
+    </div>
 
     <div *ngIf="profile">
 
         <div class="row">
 
-            <div class="col-sm-5 text-center">
-                <img class="img rounded-circle" src="{{profile.avatar_url}}" width="50%">
+            <div class="col-sm-3"></div>
 
+            <div class=" col-sm-3 text-center">
 
-                <div id="prof">
-                    <p *ngIf="profile.bio">{{profile.bio}}</p>
-                    <a href="" style="color: blue;">
-                        <p *ngIf="profile.blog">{{profile.blog}}</p>
-                    </a>
-                    <p *ngIf="profile.location"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                        {{profile.location}}</p>
-                    <p *ngIf="profile.email">{{profile.email}}</p>
-                </div>
+                <img class="rounded-circle" src="{{profile.avatar_url}}" loading="lazy" width="50%">
 
-                <div class="inform">
-                    <h3>Profile Details</h3>
-                    <p>Number of Repos : <span class="hi">{{profile.public_repos}}</span> </p>
-                    <p>Followers : <span class="hi">{{profile.followers}} </span></p>
+                <p> <small *ngIf="profile.bio">{{profile.bio}}</small></p>
+                <p><small *ngIf="profile.location"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        {{profile.location}}</small></p>
+                <p><small *ngIf="profile.blog">{{profile.blog}}</small></p>
+                <p><small *ngIf="profile.email">{{profile.email}}</small></p>
 
-                    <p>Following :<span class="hi"> {{profile.following}}</span> </p>&nbsp;
+                <p>
+                    <small>Repos : <span class="hi">{{profile.public_repos}}</span></small>&nbsp;
+                    <small>Followers : <span class="hi">{{profile.followers}}</span></small>&nbsp;
+                    <small>Following :<span class="hi"> {{profile.following}}</span></small>
+                </p>
 
-
-                    <p id="last">
+                <p><small id="last">
                         <i class="fa fa-github fa-2x" aria-hidden="true"></i>
                         <a href="{{profile.html_url}}" target="_blank">
-                            View profile on github.com </a>
+                            View profile on GitHub</a>
 
-                    </p>
-
-
-                </div>
+                    </small></p>
 
             </div>
 
-            <div class="col-sm-1"></div>
-
-            <div class="col-sm-6">
-                <h4 id="reps" class="text text-center">Repositories</h4>
-                <div id="repositories">
-                    <div id="cad" class="card" *ngFor="let repos of repos">
+            <div class="col-sm-4">
+                <h4 class="text text-center">Repositories</h4>
+                
+                    <div id="rep" class="card" *ngFor="let repos of repos">
 
                         <div class="cad">
 
@@ -64,22 +55,23 @@
                             <div class=" text-center">
                                 <h5 id="reponame"> {{repos.name}} </h5>
                             </div>
-                            
+
                             <div class="card-body">
-                                <p  id="repodescription"> {{repos.description}} </p>
+                                <p id="repodescription"> {{repos.description}} </p>
                             </div>
-                            <a href="{{profile.html_url}}" class="view_repo btn btn-outline-primary text-center"
-                                target="_blank">
+                            <a id="bt" href="{{profile.html_url}}" class="view_repo text-center" target="_blank">
                                 View on GitHub </a>
-                                <small class="date"> 
-                                    Created on : {{ repos.created_at | date }} 
-                                </small>
+                            <small class="date">
+                                Created on : {{ repos.created_at | date }}
+                            </small>
 
                         </div>
 
                     </div>
-                </div>
+            
             </div>
+            <div class="col-sm-2"></div>
 
         </div>
-        </div>
+    </div>
+</div>
