@@ -2,7 +2,7 @@
 GitLook is an Angular Web App that uses Git-Hub API to retrieve user data. Search a git-hub username and it provides repository details of the git-hub account.
 
 ## Author
-**Evans Nyambane** 
+**Evans Onchagwa** 
 
 
 ### GitLook
