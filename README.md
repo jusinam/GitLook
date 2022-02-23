@@ -54,4 +54,4 @@ Incase of any questions, problems ideas concerning the website, feel free to rea
 ***MIT LICENSE***
 
 
-Copyright &copy; 2019 **Evans Nyambane**
+Copyright &copy; 2019 **Evans Onchagwa**
